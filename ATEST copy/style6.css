@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+  margin-left: 40px;
+}
+#main > nav,
+#main > aside {
+  flex: 0 0 20vw;
+
+}
+#main > nav {
+  order: -1;
+}
+header, footer {
+
+  height: 20vh;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+li {
+  font-family: Arial;
+  font-size: 25px;
+  line-height: inherit;
+  text-decoration: none;
+  margin-top: 8px;
+
+  }
+ul {
+  margin-top: 180px;
+  text-align: left;
+  margin-left: 50px;
+  list-style: none;
+
+  }
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+li:hover {
+  font-size: 28px;
+  color: grey;
+}
+
+#pic img {
+  width: 23%;
+  height: 23%;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+#mypic {
+  width: 80%;
+  margin-left: 10%;
+
+
+}
+.second img {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+.icon {
+  position: relative;
+  left: 540px;
+  top: 40px;
+
+
+}
+
+i:hover {
+  font-size: 37px;
+}
+
+form {
+
+  margin-top: -20px;
+  margin-left: 90px;
+}
+
+.bu, input {
+
+  border-radius: 4px;
+  border-color: black;
+
+
+}
+#flower {
+  position: relative;
+left: -70px;
+bottom: 230px;
+
+
+}
+#flower img {
+  width: 34%;
+  height: auto;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}

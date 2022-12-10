@@ -1,0 +1,105 @@
+<!doctype html>
+<title>Example</title>
+<head>
+  <link rel="stylesheet" href="style6.css">
+  <script src="https://kit.fontawesome.com/743d7e3eef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div id = "pic">
+      <a href="index.html">
+      <img src="images/nametag.png" alt="">
+      </a>
+    </div>
+
+  </header>
+  <div id="main">
+    <article>
+
+
+
+
+
+
+
+    </article>
+
+    <nav>
+      <ul>
+      <li><a href="jr.html"> jay rosie </a></li>
+      <li><a href="writing.html"> writing </a></li>
+      <li><a href="films.html"> films </a></li>
+      <li><a href="visuals.html"> visuals </a></li>
+      <li><a href="tattoos.html"> tattoos </a></li>
+      <li><a href="contact.html"> contact </a></li>
+      <div id="flower">
+        <img src="images/smalflowe1.png" alt="">
+      </div>
+    </ul>
+
+
+
+    </nav>
+    <aside>
+    </aside>
+  </div>
+  <footer>
+
+  <div class = "icon">
+    <a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+	   <a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+		<a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+		<a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+		<a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-soundcloud fa-2xl"></i></a>
+		<a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-spotify fa-2xl"></i></a>
+		<a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-apple fa-2xl"></i></a>
+		<a href="https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable"><i class="fa-brands fa-bandcamp fa-2xl"></i></a>
+</div>
+<!-- <div class = "form">
+    <form>
+
+        <input type="text" id="fname" name="fname"><br>
+
+    </form> -->
+
+
+    <form method="post" action="//submit.form" onSubmit="return validateForm();">
+<div style="max-width: 400px;">
+</div>
+<div style="padding-bottom: 18px;font-size : 24px;">subscribe to my newsletter</div>
+<div style="padding-bottom: 18px;">email<span style="color: red;"></span><br/>
+<input type="text" id="data_4" name="data_4" style="max-width : 300px;" class="form-control"/>
+</div>
+<div class="bu" style="padding-bottom: 18px;"><input name="skip_Submit" value="subscribe" type="submit"/></div>
+<div>
+
+<!-- <script src="https://www.100forms.com/js/FORMKEY:PTXRNGDJLWJD" type="text/javascript"></script> -->
+</div>
+</form>
+
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_2').value.trim())) {
+alert('NAME is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_4').value.trim())) {
+alert('EMAIL is required!');
+return false;
+}
+if (!validateEmail(document.getElementById('data_4').value.trim())) {
+alert('EMAIL must be a valid email address!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+
+
+  </footer>
+</body>
